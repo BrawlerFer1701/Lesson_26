@@ -1,0 +1,79 @@
+/*Breakpoint 600px*/
+/*bg:  #f2f2f2
+	border: #cbcbcb
+	btn:  4cb050;
+*/
+
+*{margin: 0; padding: 0; box-sizing: border-box; outline: none;}
+
+.container{
+	width: 80%;
+	min-height: 200px;
+	margin: auto;
+	padding: 10px;
+}
+h2, p{
+	margin-bottom: 10px;
+}
+.main{
+	min-height: 300px;
+	padding: 20px 20px 20px 10px;
+	background: #f2f2f2;
+}
+.main::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.row{
+	width: 100%;
+}
+.col-25, .col-75{
+	width: 100%;
+	margin-bottom: 10px;
+}
+input[type=text], select{
+	width: 100%;
+	padding: 10px;
+	border: solid 1px #cbcbcb;
+	border-radius: 10px;
+}
+textarea{
+	width: 100%;
+	height: 200px;
+	border: solid 1px #cbcbcb;
+	border-radius: 10px;
+	padding: 10px;
+}
+button{
+	cursor: pointer;
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	text-align: center;
+	background: #4cb050;
+	border: none;
+	color: white;
+	font: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+@media screen and (min-width: 600px){
+	.col-25{
+		width: 25%;
+		float: left;
+	}
+	.col-75{
+		width: 75%;
+		float: left;
+	}
+	button{
+		height: 50px;
+		float: right;
+		width: 100px;
+	}
+	label{
+		line-height: 30px;
+	}
+}
